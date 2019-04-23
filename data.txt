@@ -1,0 +1,1 @@
+The dataset for gradient descent example can be downloaded from: http://themlbook.com/wiki/doku.php?id=gradient_descent
