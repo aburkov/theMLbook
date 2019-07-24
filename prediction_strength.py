@@ -1,3 +1,4 @@
+from __future__ import print_function
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -121,7 +122,7 @@ def compute_strength(k, train_centroids, test_points, test_labels):
 strengths = []
 ks = [1,2,3,4,5,6,7,8]
 for k in ks:
-    print "k", k
+    print("k", k)
     for current_split in ["train", "test"]:
         counter += 1
         centroids, labels = find_clusters(x, k, current_split)
@@ -130,7 +131,7 @@ for k in ks:
         labels_splits[current_split] = labels
     s = compute_strength(k, centroids_splits["train"], x_split["test"], labels_splits["test"])
     strengths += [s]
-    print s
+    print(s)
 
 plt.figure(10001)
 plt.plot(ks, strengths);

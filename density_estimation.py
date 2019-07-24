@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 import scipy as sp
 import matplotlib
@@ -77,7 +78,7 @@ fig1.savefig('../../Illustrations/density-estimation-loss.eps', format='eps', dp
 fig1.savefig('../../Illustrations/density-estimation-loss.pdf', format='pdf', dpi=1000, bbox_inches = 'tight', pad_inches = 0)
 fig1.savefig('../../Illustrations/density-estimation-loss.png', dpi=1000, bbox_inches = 'tight', pad_inches = 0)
 minb = [bi for bi, s in zip(b, score) if s == min(score)][0]
-print minb
+print(minb)
 
 
 for count, degree in enumerate([round(minb, 2)] + [0.2, 2.0]):

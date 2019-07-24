@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 import scipy as sp
 import matplotlib
@@ -88,7 +89,7 @@ while True:
     phi1_estimate = sum([bis1[i] for i in range(len(x))])/float(len(x))
     phi2_estimate = 1.0 - phi1_estimate
 
-    print phi1_estimate
+    print(phi1_estimate)
 
     count += 1
 

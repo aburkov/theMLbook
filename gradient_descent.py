@@ -1,3 +1,4 @@
+from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -44,8 +45,8 @@ def train(spendings, sales, w, b, alpha, epochs):
 
         # log the progress
         if (e == 0) or (e < 3000 and e % 400 == 0) or (e % 3000 == 0):
-            print "epoch: ", str(e), "loss: "+str(loss(spendings, sales, w, b))
-            print "w, b: ", w, b
+            print("epoch: ", str(e), "loss: "+str(loss(spendings, sales, w, b)))
+            print("w, b: ", w, b)
             plt.figure(image_counter)
             axes = plt.gca()
             axes.set_xlim([0,50])
@@ -78,4 +79,4 @@ def predict(x, w, b):
     return w*x + b
 x_new = 23.0
 y_new = predict(x_new, w, b)
-print y_new
+print(y_new)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -149,10 +150,10 @@ def find_clusters(x, n_clusters):
 
         # plot
         regions, vertices = voronoi_finite_polygons_2d(vor, 300)
-        print "--"
-        print regions
-        print "--"
-        print vertices
+        print("--")
+        print(regions)
+        print("--")
+        print(vertices)
 
         # colorize
         for region in regions:
