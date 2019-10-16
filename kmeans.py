@@ -20,6 +20,9 @@ x, _ = make_blobs(n_samples=50, centers=3, cluster_std=0.6, random_state=0)
 
 def voronoi_finite_polygons_2d(vor, radius=None):
     """
+    
+    Credit: https://gist.github.com/pv/8036995
+    
     Reconstruct infinite voronoi regions in a 2D diagram to finite
     regions.
 
